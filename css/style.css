@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Mirza:400,500,600,700");
+:root {
+  --rosso-corsa: rgb(211, 2, 8);
+  --gold: rgb(229, 198, 133);
+  --antique-white: rgb(245, 238, 213);
+  --chinese-black: rgb(23, 23, 20);
+  --midnight-blue: rgb(1, 83, 134);
+  --honolulu-blue: rgb(0, 116, 177);
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: url(http://cdn.welcome2018.com//upload/longreads/2310989/img/tild6339-3063-4766-a332-616639393330__1920x1080_pearl_flat.png?15271657591291351);
+  background-size: cover;
+  background-position: center center;
+  font-family: 'Mirza', monospace;
+  text-align: center;
+  letter-spacing: -1px;
+  color: var(--chinese-black);
+}
+
+p {
+  margin: 0;
+  padding: 0 1rem;
+  line-height: 1.115;
+}
+
+.center {
+  width: 100%;
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.intro p {
+  margin-top: 4rem;
+  font-size: 3rem;
+}
+
+.countdown p {
+  margin-top: 3rem;
+  max-width: 100%;
+  font-size: 4rem;
+  text-align: center;
+}
+.countdown p span {
+  color: var(--rosso-corsa);
+}
+.countdown .explanation {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 720px) {
+  .center {
+    top: 36%;
+  }
+
+  .countdown p {
+    margin-top: 4rem;
+    font-size: 6rem;
+  }
+  .countdown p span {
+    padding-bottom: 1.4rem;
+    width: 120px;
+    display: inline-block;
+    background: rgba(211, 2, 8, 0.8);
+    color: var(--gold);
+    border-radius: 10px;
+  }
+  .countdown .explanation {
+    margin-top: 2.5rem;
+  }
+
+  .intro p {
+    font-size: 4rem;
+  }
+}
